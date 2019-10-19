@@ -1,0 +1,169 @@
+a{
+    padding:15px;
+    background-color:orange;
+    /* background:#ccc;  */
+    border:0 none;
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.login, .register, .reset, .forgot{
+    padding: 0;
+    margin-top: 50px;
+    text-align: center; 
+}
+
+input {
+    padding:5px;
+    margin:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color:#333;
+}
+
+button{
+    padding:15px 25px;
+    margin-top: 5px;
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    background-color:#808000;
+}
+span{
+    text-align: left;
+    margin-top: 5px;
+}
+ul{
+    width:40px;
+    padding-left: 0pt;
+}
+
+.nav{
+    width: 145px;
+    height: 500px;
+    overflow-y: scroll;
+    margin-top: 25px;
+}
+.message{
+    width: 900px;
+    border: 1px solid black
+}
+.chatarea{
+position: absolute;
+margin-top: 600px;
+margin-left: 150px;
+}
+
+.sender{
+    position:relative;
+    margin-left: 90%;
+}
+.username{
+    position: absolute;
+    margin-left: 180px;
+}
+
+span,.nav{
+    float: left;
+    clear: left;
+}
+/******************* chat box page style **************************************/
+
+/* .back {
+    margin-bottom: 20%;
+} */
+
+.hstyle{
+    background-color: black;
+    color:blanchedalmond;
+    padding: 1px;
+    font-style: italic;
+}
+.chatheader{
+    background-color: black;
+    /* position: fixed; */
+    height: 12%;
+    width: 98%;
+    
+}
+.chatTitle{
+    color: blanchedalmond;
+    margin-left: 60;
+    padding-top: 0;
+    font-size:35px;
+    font-style: italic;
+    font-weight: bold;
+    float: left;
+}
+.logout{
+    float: left;
+    list-style-type:none;
+    color: purple;
+    padding-right: 15px;
+}
+.flex {
+    display: flex
+}
+
+.sendbox {
+  
+    margin-top: 50%;
+    height: 78px;
+ 
+}
+.inputbox{
+    height:50px;
+    width:70%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.sendButton{
+    height:50px;
+    widows: 90px;
+    color: darkgreen;
+    align-self: auto;
+    margin-left: 0.65cm;
+}
+
+.userButton{
+    margin-top: 2%;
+    background-color: brown;
+    width: 100px;
+    height:40px;
+    margin-left: 0.75cm;
+}
+.text{
+    background-color:bisque;
+    margin:20px;
+    margin-top: 10px;
+}
+.rtext{
+    background-color:bisque;
+    float: right;
+    margin-right: 5%;
+}
+.ltext{
+    background-color:bisque;
+    float:left;
+    margin-left: 5%;
+}
+.rxUser{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+/**********************************************/

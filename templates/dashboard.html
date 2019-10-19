@@ -1,0 +1,42 @@
+<div>
+        
+    <style type='text/css'>
+        body{
+            background-color:blanchedalmond;
+        }
+        </style>
+    <div class="hstyle">
+        <nav>
+            <ul>
+
+                <button class="logout" ng-click="logout()" ui-sref="login">LogOut</button>
+                <li class="logout">
+                    <a1>current user</a1><b>:{{currUser}}</b>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="flex">
+        <div class="sidebar">
+            <h1> list of Users</h1>
+           
+            <ul ng-repeat="item in users" ng-click="getUser(item)" ng-show='currUser != item.firstName'>
+                <button class="userButton" type="submit">{{item.firstName}}</button>
+            </ul>
+        </div>
+        <div class="msgspace">
+            <p>Reciever:</p>
+            <p class="receiver">{{receiverName}}</p>
+            <div ng-repeat="y in msgData">
+                <span class="rtext" ng-show="currUserId == y.senderId">{{y.message}}</span><br>
+                <span class="ltext" ng-show="currUserId != y.senderId">{{y.message}}</span><br>
+            </div>
+
+            <div class="sendbox" autoscroll="true">
+                <input class="inputbox" type="text" id="message" ng-model="msg" name="msg">
+                <button ng-click="sendMsg(msg);clearTextArea()" class="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
